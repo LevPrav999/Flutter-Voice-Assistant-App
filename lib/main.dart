@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pixiegpt/colors_pallete.dart';
 
 import 'home_page.dart';
 
@@ -16,10 +17,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        primarySwatch: Colors.blue,
+      title: 'Pixie GPT',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(useMaterial3: true).copyWith(
+        scaffoldBackgroundColor: CPallete.whiteColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black45
+        )
       ),
       home: const HomePage(),
     );
