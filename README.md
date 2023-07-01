@@ -1,16 +1,19 @@
-# pixiegpt
+# Flutter Voice Assistant App
 
-A new Flutter project.
+Простое приложение для голосового помощника на базе ChatGPT и DALL-E.
 
-## Getting Started
+## Возможности
 
-This project is a starting point for a Flutter application.
+1. Распознавание голоса
+2. Текстовые ответы с помощью ChatGPT
+3. Генерация изображений с помощью DALL-E
 
-A few resources to get you started if this is your first Flutter project:
+## Описание
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Это приложение разработано с использованием Flutter и предоставляет возможность общения с голосовым помощником. Приложение использует API ChatGPT для генерации текстовых ответов и API DALL-E для генерации изображений.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Пользователь может задавать вопросы голосом, и приложение распознает речь с помощью модуля распознавания речи. Затем введенный текст передается API chatGPT, которое генерирует текстовый ответ. Если запрос подразумевает генерацию изображения, приложение использует API DALL-E и отображает результат.
+
+## Примечание
+
+В файл `secrets.dart` необходимо вставить свой ключ OpaenAI API
