@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(useMaterial3: true).copyWith(
         scaffoldBackgroundColor: CPallete.whiteColor,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black45
+          backgroundColor: CPallete.whiteColor
         )
       ),
       home: const HomePage(),
